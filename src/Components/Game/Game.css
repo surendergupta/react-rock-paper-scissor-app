@@ -1,0 +1,133 @@
+.Game-container
+{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    padding: 25px 0;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.Game,
+.history-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  width: 50%;
+  box-sizing: border-box;
+  height: auto;
+}
+
+.button-group
+{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.button
+{
+    background-color: #131212;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Game h2, .Game h3
+{
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+.reset-button {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.reset-button:hover {
+  background-color: #c0392b;
+}
+
+.final-result {
+  color: #27ae60;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+
+.history {
+  width: 100%;
+}
+.history h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.history ul {
+  padding-left: 0rem;
+  list-style: none;
+}
+    
+.history li.history-entry {
+  margin-bottom: 0.5rem;
+  background-color: aliceblue;
+  padding: 0.5rem;
+  border-radius: 8px;
+  color: #131212;
+  font-size: 15px;
+}
+
+.history li.score-entry
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    margin-bottom: 0.5rem;
+    background-color: aliceblue;
+    padding: 0.5rem;
+    border-radius: 8px;
+    color: #131212;
+}
+
+.score-result{
+    background-color: #131212;
+    color: #fff;
+    padding: 2px 8px;
+    border: 1px solid #fff;
+    border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  .Game,
+  .history-container {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .button,
+  .reset-button {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .history li.history-entry,
+  .history li.score-entry {
+    font-size: 14px;
+  }
+}

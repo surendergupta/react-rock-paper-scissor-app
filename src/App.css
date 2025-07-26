@@ -1,0 +1,69 @@
+.App
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #242424;
+  color: #fff;
+  width: 100%;
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+.App-header
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  background-color: #131212;
+  color: #fff;
+  width: 100%;
+  height: 10vh;
+  min-height: 60px;
+  text-align: center;
+}
+.App-main
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #fff;
+  width: 100%;
+  padding: 2rem 0;
+  box-sizing: border-box;
+}
+.App-footer
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  color: #fff;
+  width: 100%;
+  height: 10vh;
+  min-height: 60px;
+  background-color: #131212;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .App {
+    padding: 0 0.5rem;
+  }
+
+  .App-main {
+    font-size: 1rem;
+  }
+
+  .App-header,
+  .App-footer {
+    font-size: 0.9rem;
+  }
+}
