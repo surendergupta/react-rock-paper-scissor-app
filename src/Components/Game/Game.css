@@ -6,7 +6,7 @@
     width: 100%;
     padding: 25px 0;
     gap: 25px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .Game,
@@ -19,7 +19,10 @@
   box-sizing: border-box;
   height: auto;
 }
-
+/* .history-container
+{
+  flex-direction: row;
+} */
 .button-group
 {
     display: flex;
@@ -109,6 +112,10 @@
 }
 
 @media (max-width: 768px) {
+  .Game-container {
+    flex-wrap: wrap;
+  }
+  
   .Game,
   .history-container {
     width: 100%;
